@@ -1,0 +1,16 @@
+{
+  "name": "git-revision",
+  "version": "0.0.1",
+  "description": "Simple node module for git revision information",
+  "main": "index.js",
+  "author": "Matthew Davies <matthew@daviesgeek.com> (http://daviesgeek.com/)",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:daviesgeek/git-revision.git"
+  },
+  "license": "MIT",
+  "engines" : {
+   "node" : ">=0.12"
+  }
+
+}

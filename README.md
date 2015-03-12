@@ -7,19 +7,19 @@ This module provides an simple API for both synchronous and asynchronous fetchin
 
 ## Methods
 
-###`short`
+### `short`
   Returns the short form of a the current git hash  
   _Example_: `f1079c1`
-###`long`
+### `long`
   Returns the short form of a the current git hash  
   _Example_: `f1079c100a1889a3c75f8de650582bd5b936594c`
-###`hash`
+### `hash`
   Alias of `long`
-###`tag`
+### `tag`
   Returns the current tag. If there is no tag, this will return the full hash (just as if you called `long`)  
   _Example_: `f1079c100a1889a3c75f8de650582bd5b936594c` or `0.0.1`
 
-###`branch`
+### `branch`
   Returns the current branch  
   _Example_: `master`
 

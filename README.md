@@ -2,6 +2,9 @@
 Simple node module for git revision information
 
 [![Circle CI](https://circleci.com/gh/daviesgeek/git-revision.svg?style=shield)](https://circleci.com/gh/daviesgeek/git-revision)
+[![npm version](https://badge.fury.io/js/git-revision.svg)](https://badge.fury.io/js/git-revision)
+
+[![NPM](https://nodei.co/npm/git-revision.png)](https://nodei.co/npm/git-revision/)
 
 # General Info
 

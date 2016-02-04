@@ -1,7 +1,7 @@
 /**
  * Simple module for git revision information
  * @author Matthew Davies <matthew@daviesgeek.com>
- * @version 0.0.1
+ * @version 0.0.2
  */
 
 // Get the necessary process stuff

@@ -59,7 +59,6 @@ module.exports = function(type, cb) {
     //  throw a ReferenceError
     default:
       throw ReferenceError('Revision type "' + type + '" is invalid')
-      break;
   }
 
   // If the callback is a function, run asynchronously

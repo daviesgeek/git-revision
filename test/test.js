@@ -62,4 +62,10 @@ describe('Works', function () {
     })
   })
 
+  it('should throw errors correctly', function () {
+    expect(function() {
+      revision('branches')
+    }).to.throw(Error)
+  })
+
 })

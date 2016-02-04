@@ -8,9 +8,15 @@
     "type": "git",
     "url": "git@github.com:daviesgeek/git-revision.git"
   },
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
   "license": "MIT",
-  "engines" : {
-   "node" : ">=0.12"
+  "engines": {
+    "node": ">=0.12"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
   }
-
 }

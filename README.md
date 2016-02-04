@@ -1,6 +1,8 @@
 # git-revision
 Simple node module for git revision information
 
+[![Circle CI](https://circleci.com/gh/daviesgeek/git-revision.svg?style=shield)](https://circleci.com/gh/daviesgeek/git-revision)
+
 # General Info
 
 This module provides an simple API for both synchronous and asynchronous fetching of git revision information. Note: this module requires Node 0.12 for [the `execSync` method](https://nodejs.org/api/child_process.html#child_process_child_process_execsync_command_options)

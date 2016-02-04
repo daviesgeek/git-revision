@@ -9,6 +9,16 @@ var process = require('child_process'),
     exec = process.exec,
     execSync = process.execSync
 
+
+/**
+ * Private function to parse the output before sending it out
+ * @param  {string} output the string from stdout
+ * @return {string}
+ */
+function parseOutput(output) {
+  return output.split('\n').join('')
+}
+
 /**
  * The actual exported module
  * @param  {string}     type the type of revision information wanted
@@ -65,14 +75,4 @@ module.exports = function(type, cb) {
   else
     return parseOutput(execSync(command, {cwd: __dirname}).toString())
 
-}
-
-
-/**
- * Private function to parse the output before sending it out
- * @param  {string} output the string from stdout
- * @return {string}
- */
-function parseOutput(output) {
-  return output.split('\n').join('')
 }

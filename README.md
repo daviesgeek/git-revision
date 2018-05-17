@@ -16,7 +16,7 @@ This module provides an simple API for both synchronous and asynchronous fetchin
   Returns the short form of a the current git hash  
   _Example_: `f1079c1`
 ### `long`
-  Returns the short form of a the current git hash  
+  Returns the long form of a the current git hash  
   _Example_: `f1079c100a1889a3c75f8de650582bd5b936594c`
 ### `hash`
   Alias of `long`

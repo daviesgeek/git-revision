@@ -1,6 +1,6 @@
 {
   "name": "git-revision",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple node module for git revision information",
   "main": "index.js",
   "author": "Matthew Davies <matthew@daviesgeek.com> (http://daviesgeek.com/)",

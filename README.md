@@ -8,7 +8,7 @@ Simple node module for git revision information
 
 # General Info
 
-This module provides an simple API for both synchronous and asynchronous fetching of git revision information. Note: this module requires Node 0.12 for [the `execSync` method](https://nodejs.org/api/child_process.html#child_process_child_process_execsync_command_options)
+This module provides an simple API for both synchronous and asynchronous fetching of git revision information. Note: this module requires at least Node 0.12 for [the `execSync` method](https://nodejs.org/api/child_process.html#child_process_child_process_execsync_command_options)
 
 ## Methods
 
@@ -53,6 +53,16 @@ var gitRevision = require('git-revision')
   // Asynchronously
   gitRevision("tag", function (tag) {
     var tag = tag
+  })
+
+// Get a particular branch's long commit hash
+
+  // Synchronously
+  var branchCommit = gitRevision("branchCommit", "master")
+
+  // Asynchronously
+  gitRevision("branchCommit", "master", function (commit) {
+    var commit = commit
   })
 
 ```

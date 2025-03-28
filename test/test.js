@@ -25,6 +25,10 @@ describe('Works', function () {
     expect(revision('branch')).to.exist
   })
 
+  it("should get a long form description of the current tag", function () {
+    expect(revision("describeTag")).to.exist;
+  });
+
   // Asynchronous calls
 
   it('should get the short version asynchronously', function (done) {
@@ -61,6 +65,13 @@ describe('Works', function () {
       done()
     })
   })
+
+  it("should get a long form description of the current tag asynchronously", function (done) {
+    revision("describeTag", function (value) {
+      expect(value).to.exist;
+      done();
+    });
+  });
 
   it('should throw errors correctly', function () {
     expect(function() {

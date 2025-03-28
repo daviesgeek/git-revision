@@ -26,3 +26,13 @@ var gitRevision = require('./')
   gitRevision("tag", function (tag) {
     var tag = tag
   })
+
+// Get a long form description of the current tag
+
+  // Synchronously
+  var branchCommit = gitRevision("describeTag");
+
+  // Asynchronously
+  gitRevision("describeTag", function (commit) {
+    var commit = commit;
+  });

@@ -1,7 +1,7 @@
 /**
  * Simple module for git revision information
  * @author Matthew Davies <matthew@daviesgeek.com>
- * @version 0.0.2
+ * @version 0.0.3
  */
 
 // Get the necessary process stuff
@@ -53,6 +53,11 @@ module.exports = function(type, cb) {
     // Current branch
     case 'branch':
       command = 'git rev-parse --abbrev-ref HEAD'
+      break;
+    
+    // Get a long form description of the current  tag
+    case "describeTag":
+      command = "git describe --tags --always --first-parent";
       break;
 
     // If the type doesn't match anything,

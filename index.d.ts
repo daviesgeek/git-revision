@@ -3,6 +3,7 @@ type GitRevisionTypes =
   'long' |
   'hash' |
   'tag' |
+  'branch' |
   'describeTag'
 
 declare function gitRevision(type: GitRevisionTypes): string
